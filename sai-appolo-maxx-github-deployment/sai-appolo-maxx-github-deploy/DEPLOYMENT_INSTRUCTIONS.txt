@@ -1,0 +1,44 @@
+# Sai Appolo Maxx Website Deployment Instructions
+
+## Deployment Package
+The deployment package `sai-appolo-maxx-deployment.zip` contains all necessary files for deploying your website.
+
+## Contents of Deployment Package
+- `index.html` - Main entry point
+- `assets/` folder - Contains all JavaScript bundles and images
+- `documents/` folder - Contains all PDF documents
+
+## Deployment Options
+
+### Option 1: Hostinger (Recommended)
+1. Log in to your Hostinger account
+2. Go to the File Manager
+3. Navigate to `public_html` (or your subdomain folder)
+4. Extract all contents from `sai-appolo-maxx-deployment.zip` to this directory
+5. Ensure file permissions are set correctly (644 for files, 755 for directories)
+
+### Option 2: Any Shared Hosting
+1. Extract the contents of `sai-appolo-maxx-deployment.zip`
+2. Upload all files and folders to your web hosting root directory
+3. Make sure the file structure is preserved
+
+### Option 3: Cloud Storage (AWS S3, Google Cloud, etc.)
+1. Create a new bucket/container
+2. Enable static website hosting
+3. Upload all files from the deployment package
+4. Set appropriate permissions for public access
+
+## Post-Deployment Checklist
+1. Visit your domain to verify the website loads correctly
+2. Check that all images load properly
+3. Verify that navigation between pages works
+4. Test the contact functionality
+5. Ensure PDF documents are accessible
+
+## Troubleshooting
+- If images don't load, check file permissions
+- If pages don't load properly, ensure your server supports SPA routing or add a redirect rule
+- For any issues, refer to the HOSTINGER_DEPLOYMENT_GUIDE.txt file
+
+## Support
+For additional help with deployment, contact your hosting provider or refer to their documentation.
